@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_SingleMode"
+            style="@style/txt_grid_item"
+            android:text="单例" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_FactoryMethodModel"
+            style="@style/txt_grid_item"
+            android:text="工厂方法" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_AbstractFactoryModel"
+            style="@style/txt_grid_item"
+            android:text="抽象工厂" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_TemplateMethodModel"
+            style="@style/txt_grid_item"
+            android:text="模版方法" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_BuilderMode"
+            style="@style/txt_grid_item"
+            android:text="建造者(Builder)" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_ProxyMode"
+            style="@style/txt_grid_item"
+            android:text="代理" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_CloneMode"
+            style="@style/txt_grid_item"
+            android:text="原型" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_IntermediaryModel"
+            style="@style/txt_grid_item"
+            android:text="中介者" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_CommandMode"
+            style="@style/txt_grid_item"
+            android:text="命令" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_ChainOfResponsibilityModel"
+            style="@style/txt_grid_item"
+            android:text="责任链" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_DecorativeMode"
+            style="@style/txt_grid_item"
+            android:text="装饰" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_StrategyMode"
+            style="@style/txt_grid_item"
+            android:text="策略" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_AdapterMode"
+            style="@style/txt_grid_item"
+            android:text="适配器" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_IteratorModel"
+            style="@style/txt_grid_item"
+            android:text="迭代器" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_CombinationMode"
+            style="@style/txt_grid_item"
+            android:text="组合" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_ObserverMode"
+            style="@style/txt_grid_item"
+            android:text="观察者" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_WindowMode"
+            style="@style/txt_grid_item"
+            android:text="门面" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_MemoMode"
+            style="@style/txt_grid_item"
+            android:text="备忘录" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_VisitorMode"
+            style="@style/txt_grid_item"
+            android:text="访问者" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_StateModel"
+            style="@style/txt_grid_item"
+            android:text="状态" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_ParserMode"
+            style="@style/txt_grid_item"
+            android:text="解释器" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_FlyweightMode"
+            style="@style/txt_grid_item"
+            android:text="享元" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_BridgeMode"
+            style="@style/txt_grid_item"
+            android:text="桥梁" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_MVC"
+            style="@style/txt_grid_item"
+            android:text="MVC" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout style="@style/linear">
+
+        <TextView
+            android:id="@+id/tv_MVP"
+            style="@style/txt_grid_item"
+            android:text="MVP" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView
+            android:id="@+id/tv_MVVP"
+            style="@style/txt_grid_item"
+            android:text="MVVP" />
+
+        <View style="@style/line_vertical" />
+
+        <TextView style="@style/txt_grid_item" />
+    </LinearLayout>
+
+    <View style="@style/line_horizontal" />
+</LinearLayout>

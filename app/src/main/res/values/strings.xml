@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">设计模式</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="SingleMode">单例</string>
+    <string name="SingleMode_demo">每个人都是单例…</string>
+    <string name="SingleMode_brief">确保一个类只有一个实例，而且自行实例化并向整个系统提供这个实例。</string>
+    <string name="SingleMode_description">单例模式注意事项：\n\n
+                    只能使用单例类提供的方法得到单例对象，不要使用反射，否则将会实例化一个新对象。不要做断开单例类对象与类中静态引用的危险操作。多线程使用单例使用共享资源时，注意线程安全问题。</string>
+
+    <string name="FactoryMethodModel">工厂方法</string>
+    <string name="FactoryMethodModel_demo">中国就是一个大工厂，想要什么产品就有什么产品！</string>
+    <string name="FactoryMethodModel_brief">定义一个用于创建对象的接口，让子类决定实例化哪一个类，工厂方法使一个类的实例化延迟到其子类。</string>
+    <string name="FactoryMethodModel_description">在工厂方法模式中，核心的工厂类不再负责所有的对象的创建，而是将具体创建的工作交给子类去做。这个核心类则摇身一变，成为了一个抽象工厂角色，仅负责给出具体工厂子类必须实现的接口，而不接触哪一个类应当被实例化这种细节。</string>
+
+
+    <string name="AbstractFactoryModel">抽象工厂</string>
+    <string name="AbstractFactoryModel_demo"></string>
+    <string name="AbstractFactoryModel_brief">为创建一组相关或相互依赖的对象提供一个接口，而且无需指定他们的具体类。</string>
+    <string name="AbstractFactoryModel_description">在以下情况下，适用于工厂方法模式：
+            (1) 当一个类不知道它所必须创建的对象的类的时候。
+            (2) 当一个类希望由它的子类来指定它所创建的对象的时候。
+            (3) 当类将创建对象的职责委托给多个帮助子类中的某一个，并且你希望将哪一个帮助子类是代理者这一信息局部化的时候。</string>
+
+
+    <string name="TemplateMethodModel">模版方法</string>
+    <string name="TemplateMethodModel_demo"></string>
+    <string name="TemplateMethodModel_brief">定义一个操作中算法的框架，而将一些步骤延迟到子类中，使得子类可以不改变算法的结构即可重定义该算法中的某些特定步骤。</string>
+    <string name="TemplateMethodModel_description">子类可以置换掉父类的可变部分，但是子类却不可以改变模板方法所代表的顶级逻辑。
+　　每当定义一个新的子类时，不要按照控制流程的思路去想，而应当按照“责任”的思路去想。换言之，应当考虑哪些操作是必须置换掉的，哪些操作是可以置换掉的，以及哪些操作是不可以置换掉的。使用模板模式可以使这些责任变得清晰。</string>
+
+
+    <string name="BuilderMode">建造者</string>
+    <string name="BuilderMode_demo"></string>
+    <string name="BuilderMode_brief">将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</string>
+    <string name="BuilderMode_description">与抽象工厂的区别：在建造者模式里，有个指导者，由指导者来管理建造者，用户是与指导者联系的，指导者联系建造者最后得到产品。即建造模式可以强制实行一种分步骤进行的建造过程。
+            　　建造模式是将复杂的内部创建封装在内部，对于外部调用的人来说，只需要传入建造者和建造工具，对于内部是如何建造成成品的，调用者无需关心。
+            在Java的应用中JavaMail使用到了该模式。</string>
+
+
+    <string name="ProxyMode">代理</string>
+    <string name="ProxyMode_demo"></string>
+    <string name="ProxyMode_brief">为其他对象提供一种代理以控制对这个对象的访问。</string>
+    <string name="ProxyMode_description">所谓代理，就是一个人或者机构代表另一个人或者机构采取行动。在一些情况下，一个客户不想或者不能够直接引用一个对象，而代理对象可以在客户端和目标对象之间起到中介的作用。</string>
+
+
+    <string name="CloneMode">原型模式</string>
+    <string name="CloneMode_demo"></string>
+    <string name="CloneMode_brief">用原型实例指定创建对象的种类，并通过拷贝这些原型创建新的对象。</string>
+    <string name="CloneMode_description">原型模式要求对象实现一个可以“克隆”自身的接口，这样就可以通过复制一个实例对象本身来创建一个新的实例。这样一来，通过原型实例创建新的对象，就不再需要关心这个实例本身的类型，只要实现了克隆自身的方法，就可以通过这个方法来获取新的对象，而无须再去通过new来创建。</string>
+
+
+    <string name="IntermediaryModel">中介者模式</string>
+    <string name="IntermediaryModel_demo"></string>
+    <string name="IntermediaryModel_brief">用一个中介者对象封装一系列的对象交互，中介者使各对象不需要显示地相互作用，从而使耦合松散，而且可以独立地改变它们之间的交互。</string>
+    <string name="IntermediaryModel_description">中介者模式的优点
+            适当地使用中介者模式可以避免同事类之间的过度耦合，使得各同事类之间可以相对独立地使用。
+            使用中介者模式可以将对象间一对多的关联转变为一对一的关联，使对象间的关系易于理解和维护。
+            使用中介者模式可以将对象的行为和协作进行抽象，能够比较灵活的处理对象间的相互作用。</string>
+
+
+    <string name="CommandMode">命令</string>
+    <string name="CommandMode_demo"></string>
+    <string name="CommandMode_brief">意图：将一个请求封装为一个对象，从而可用不同的请求对客户进行参数化；对请求排队或记录日志，以及支持可撤销的操作\n
+        动机：将”发出请求的对象”和”接收与执行这些请求的对象”分隔开来。</string>
+    <string name="CommandMode_description">常见应用：
+                    1、工作队列，线程池，日程安排
+                    2、日志请求(系统恢复)
+                    要点：
+                    1、命令模式将发出请求的对象和执行请求的对象解耦
+                    2、在被解耦的两者之间是通过命令对象进行沟通的。命令对象封装了接收者和一个或一组动作
+                    3、调用者通过调用命令对象的execute()发出请求，这会使得接收者的动作被调用
+                    4、调用者可以接受命令当作参数，甚至在运行时动态的进行
+                    5、命令可以支持撤销，做法是实现一个undo()方法来回到execute()被执行前的状态
+                    6、宏命令是命令的一种简单的延伸，允许调用多个命令。宏方法也可以支持撤销
+                    7、实际操作时，很常见使用"聪明"命令对象，也就是直接实现了请求，而不是将工作委托给接受者(弊端？)
+                    8、命令也可以用来实现日志和事物系统</string>
+
+
+    <string name="ChainOfResponsibilityModel">责任链</string>
+    <string name="ChainOfResponsibilityModel_demo"></string>
+    <string name="ChainOfResponsibilityModel_brief">使多个对象都有机会处理请求，从而避免了请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有对象处理它为止。</string>
+    <string name="ChainOfResponsibilityModel_description">一个纯的责任链模式要求一个具体的处理者对象只能在两个行为中选择一个：一是承担责任，而是把责任推给下家。不允许出现某一个具体处理者对象在承担了一部分责任后又 把责任向下传的情况。
+　　在一个纯的责任链模式里面，一个请求必须被某一个处理者对象所接收；在一个不纯的责任链模式里面，一个请求可以最终不被任何接收端对象所接收。
+　　纯的责任链模式的实际例子很难找到，一般看到的例子均是不纯的责任链模式的实现。有些人认为不纯的责任链根本不是责任链模式，这也许是有道理的。但是在实际的系统里，纯的责任链很难找到。如果坚持责任链不纯便不是责任链模式，那么责任链模式便不会有太大意义了。</string>
+
+    <string name="DecorativeMode">装饰</string>
+    <string name="DecorativeMode_demo"></string>
+    <string name="DecorativeMode_brief">又名包装(Wrapper)模式，装饰模式以对客户端透明的方式扩展对象的功能，是继承关系的一个替代方案。</string>
+    <string name="DecorativeMode_description">装饰模式与类继承的区别：
+                1)    装饰模式是一种动态行为，对已经存在类进行随意组合，而类的继承是一种静态的行为，一个类定义成什么样的，该类的对象便具有什么样的功能，无法动态的改变。
+                2)    装饰模式扩展的是对象的功能，不需要增加类的数量，而类继承扩展是类的功能，在继承的关系中，如果我们想增加一个对象的功能，我们只能通过继承关系，在子类中增加两个方法。
+                3)    装饰与继承比较图：
+                4)    装饰模式是在不改变原类文件和使用继承的情况下，动态的扩展一个对象的功能，它是通过创建一个包装对象，也就是装饰来包裹真是的对象。
+                5.    装饰模式把对客户端的调用委派给被装饰的类，装饰模式的关键在于这种扩展完全透明的。</string>
+
+
+    <string name="StrategyMode">策略</string>
+    <string name="StrategyMode_demo"></string>
+    <string name="StrategyMode_brief">定义一组算法，将每个算法都封装起来，并且使他们之间可以互换。策略模式的好处在于你可以动态的改变对象的行为。</string>
+    <string name="StrategyMode_description">策略模式属于对象行为型模式，主要针对一组算法，将每一个算法封装到具有共同接口的独立的类中，从而使得它们可以相互替换。策略模式使得算法可以在不影响 到客户端的情况下发生变化。通常，策略模式适用于当一个应用程序需要实现一种特定的服务或者功能，而且该程序有多种实现方式时使用。</string>
+
+
+    <string name="AdapterMode">适配器</string>
+    <string name="AdapterMode_demo"></string>
+    <string name="AdapterMode_brief">基于现有类所提供的服务，向客户提供接口，以满足客户的期望。</string>
+    <string name="AdapterMode_description">适配器模式的用意是要改变源的接口，以便于目标接口相容。缺省适配的用意稍有不同，它是为了方便建立一个不平庸的适配器类而提供的一种平庸实现。</string>
+
+
+    <string name="IteratorModel">迭代器</string>
+    <string name="IteratorModel_demo"></string>
+    <string name="IteratorModel_brief">	提供一种方法访问一个容器对象中各个元素，而又不暴露该对象的内部细节。</string>
+    <string name="IteratorModel_description">在jdk中,与迭代器相关的接口有两个:Iterator 与 Iterable
+            Iterator:迭代器，Iterator及其子类通常是迭代器本身的结构与方法；
+            Iterable:可迭代的，那些想用到迭代器功能的其它类，如AbstractList HashMap等，需要实现该接口。 </string>
+
+
+    <string name="CombinationMode">组合</string>
+    <string name="CombinationMode_demo"></string>
+    <string name="CombinationMode_brief">将对象组合成树形结构以表示‘部分-整体’的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。对象通过实现（继承）统一的接口（抽象类），调用者对单一对象和组合对象的操作具有一致性。</string>
+    <string name="CombinationMode_description">通过实现组合模式，调用者对组合对象的操作与对单一对象的操作具有一致性。调用者不用关心这是组合对象还是文件，也不用关心组合对象内部的具体结构，就可以调用相关方法，实现功能。</string>
+
+
+    <string name="ObserverMode">观察者</string>
+    <string name="ObserverMode_demo"></string>
+    <string name="ObserverMode_brief">定义对象间一种一对多的依赖关系，使得当每一个对象改变状态，则所有依赖于它的对象都会得到通知并自动更新。</string>
+    <string name="ObserverMode_description">观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态上发生变化时，会通知所有观察者对象，使它们能够自动更新自己。</string>
+
+    <string name="WindowMode">门面</string>
+    <string name="WindowMode_demo"></string>
+    <string name="WindowMode_brief">	外部与一个子系统的通信必须通过一个统一的门面对象进行。</string>
+    <string name="WindowMode_description">一个统一的门面对象进行。	门面模式的优点：
+            　　●　　松散耦合
+            　　门面模式松散了客户端与子系统的耦合关系，让子系统内部的模块能更容易扩展和维护。
+            　　●　　简单易用
+            　　门面模式让子系统更加易用，客户端不再需要了解子系统内部的实现，也不需要跟众多子系统内部的模块进行交互，只需要跟门面类交互就可以了。
+            　　●　　更好的划分访问层次
+            　　通过合理使用Facade，可以帮助我们更好地划分访问的层次。有些方法是对系统外的，有些方法是系统内部使用的。把需要暴露给外部的功能集中到门面中，这样既方便客户端使用，也很好地隐藏了内部的细节。</string>
+
+    <string name="MemoMode">备忘录</string>
+    <string name="MemoMode_demo"></string>
+    <string name="MemoMode_brief">	在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样就可以将该对象恢复到原先保存的状态。</string>
+    <string name="MemoMode_description">备忘录对象是一个用来存储另外一个对象内部状态的快照的对象。备忘录模式的用意是在不破坏封装的条件下，将一个对象的状态捕捉(Capture)住，并外部化，存储起来，从而可以在将来合适的时候把这个对象还原到存储起来的状态。备忘录模式常常与命令模式和迭代子模式一同使用。</string>
+
+    <string name="VisitorMode">访问者</string>
+    <string name="VisitorMode_demo"></string>
+    <string name="VisitorMode_brief">封装某些作用于某种数据结构中各元素的操作，它可以在不改变数据结构的前提下定义作用于这些元素的新的操作。
+        访问者模式是对象的行为模式。访问者模式的目的是封装一些施加于某种数据结构元素之上的操作。一旦这些操作需要修改的话，接受这个操作的数据结构则可以保持不变。</string>
+    <string name="VisitorMode_description">访问者模式的优点
+        　　好的扩展性
+        　　能够在不修改对象结构中的元素的情况下，为对象结构中的元素添加新的功能。
+        　　好的复用性
+        　　可以通过访问者来定义整个对象结构通用的功能，从而提高复用程度。
+        　　分离无关行为
+        　　可以通过访问者来分离无关的行为，把相关的行为封装在一起，构成一个访问者，这样每一个访问者的功能都比较单一。
+
+        访问者模式的缺点
+        　　对象结构变化很困难
+        　　不适用于对象结构中的类经常变化的情况，因为对象结构发生了改变，访问者的接口和访问者的实现都要发生相应的改变，代价太高。
+        　　破坏封装
+        　　访问者模式通常需要对象结构开放内部数据给访问者和ObjectStructrue，这破坏了对象的封装性。</string>
+
+
+    <string name="StateModel">状态</string>
+    <string name="StateModel_demo"></string>
+    <string name="StateModel_brief">当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。</string>
+    <string name="StateModel_description">状态模式允许一个对象在其内部状态改变的时候改变其行为。这个对象看上去就像是改变了它的类一样。</string>
+
+    <string name="ParserMode">解释器</string>
+    <string name="ParserMode_demo"></string>
+    <string name="ParserMode_brief">	给定一种语言，定义他的文法的一种表示，并定义一个解释器，该解释器使用该表示来解释语言中句子。</string>
+    <string name="ParserMode_description"></string>
+
+    <string name="FlyweightMode">享元</string>
+    <string name="FlyweightMode_demo"></string>
+    <string name="FlyweightMode_brief">复用我们内存中已存在的对象，降低系统创建对象实例的性能消耗。
+
+                Flyweight在拳击比赛中指最轻量级，即“蝇量级”或“雨量级”，这里选择使用“享元模式”的意译，是因为这样更能反映模式的用意。享元模式是对象的结构模式。享元模式以共享的方式高效地支持大量的细粒度对象。</string>
+    <string name="FlyweightMode_description">享元模式采用一个共享来避免大量拥有相同内容对象的开销。这种开销最常见、最直观的就是内存的损耗。享元对象能做到共享的关键是区分内蕴状态(Internal State)和外蕴状态(External State)。</string>
+
+    <string name="BridgeMode">桥梁</string>
+    <string name="BridgeMode_demo"></string>
+    <string name="BridgeMode_brief">将抽象和实现解耦，使得两者可以独立地变化。
+        桥梁模式的用意是“将抽象化(Abstraction)与实现化(Implementation)脱耦，使得二者可以独立地变化”。</string>
+    <string name="BridgeMode_description">桥梁模式在Java应用中的一个非常典型的例子就是JDBC驱动器。JDBC为所有的关系型数据库提供一个通用的界面。一个应用系统动态地选择一个合适的驱动器，然后通过驱动器向数据库引擎发出指令。这个过程就是将抽象角色的行为委派给实现角色的过程。</string>
+
+    <string name="MVC">MVC</string>
+    <string name="MVC_demo"></string>
+    <string name="MVC_brief"></string>
+    <string name="MVC_description"></string>
+
+    <string name="MVP">MVP</string>
+    <string name="MVP_demo"></string>
+    <string name="MVP_brief"></string>
+    <string name="MVP_description"></string>
+
+    <string name="MVVP">MVVP</string>
+    <string name="MVVP_demo"></string>
+    <string name="MVVP_brief"></string>
+    <string name="MVVP_description"></string>
+
+</resources>
